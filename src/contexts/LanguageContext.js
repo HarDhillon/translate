@@ -2,7 +2,7 @@ import React from 'react';
 
 const Context = React.createContext('english');
 
-class LanguageStore extends React.Component {
+export class LanguageStore extends React.Component {
   state = { language: 'english' }
 
   // providing call back to allow language change
@@ -19,3 +19,5 @@ class LanguageStore extends React.Component {
     )
   }
 }
+
+export default Context;
